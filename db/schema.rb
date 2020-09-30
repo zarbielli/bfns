@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_29_210509) do
+ActiveRecord::Schema.define(version: 2020_09_30_144204) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2020_09_29_210509) do
   end
 
   create_table "publis", force: :cascade do |t|
-    t.string "tittle"
+    t.string "title"
     t.text "thumb"
     t.string "author"
     t.text "content"

@@ -31,10 +31,15 @@ class PubliController < ApplicationController
 		end
 	end 
 
+	def search
+		publis = Publi.search_name(params[:term])
+		render json: publis, status: 200
+	end
+
 	private 
 
 		def publi_params
-			params.permit(:tittle, :thumb, :author, :content, :img_ctt, :tag, :id)
+			params.permit(:tittle, :thumb, :author, :content, :img_ctt, :tag, :id, :term)
 		end
 
 end

@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   post '/publis' => 'publi#create'
   delete '/publis' => 'publi#destroy'
   put '/publis' => 'publi#update'
+  get '/publis/search' => 'publi#search'
 
   get 'lancamento/index'
   get 'lancamento/show'
