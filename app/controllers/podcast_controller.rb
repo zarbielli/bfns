@@ -37,5 +37,6 @@ class PodcastController < ApplicationController
     def podcast_params
       params.permit(:name, :link, :description, :id)
     end
-  end
+  
+end
   

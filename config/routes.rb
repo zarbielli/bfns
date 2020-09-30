@@ -8,4 +8,38 @@ Rails.application.routes.draw do
   post '/podcasts' => 'podcast#create'
   delete '/podcasts' => 'podcast#destroy'
   put '/podcasts' => 'podcast#update'
+
+  get 'video/index'
+  get 'video/show'
+  get 'video/destroy'
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get '/videos' => 'video#index'
+  post '/videos' => 'video#create'
+  delete '/videos' => 'video#destroy'
+  put '/videos' => 'video#update'
+
+  get 'publi/index'
+  get 'publi/show'
+  get 'publi/destroy'
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get '/publis' => 'publi#index'
+  post '/publis' => 'publi#create'
+  delete '/publis' => 'publi#destroy'
+  put '/publis' => 'publi#update'
+  get '/publis/search' => 'publi#search'
+
+  get 'lancamento/index'
+  get 'lancamento/show'
+  get 'lancamento/destroy'
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get '/lancamentos' => 'lancamento#index'
+  post '/lancamentos' => 'lancamento#create'
+  delete '/lancamentos' => 'lancamento#destroy'
+  put '/lancamentos' => 'lancamento#update'
+
+  put '/adm' => 'adm#update'
 end
+
